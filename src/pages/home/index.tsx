@@ -1,9 +1,13 @@
-import { DivHome } from './homeStyled';
+import { DivHome, DivSearchBar, InputTextSearchBar } from './homeStyled';
 
 const Home = () => {
   return (
     <>
-      <DivHome>Home</DivHome>
+      <DivHome>
+        <DivSearchBar>
+          <InputTextSearchBar type='text' placeholder='Search' />
+        </DivSearchBar>
+      </DivHome>
     </>
   );
 };

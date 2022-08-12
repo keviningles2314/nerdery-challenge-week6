@@ -1,5 +1,5 @@
 export const theme = {
-  background: '#E5E5E5',
+  white: '#FFFFFF',
   mainTextColor: '#343951',
   sidebarTextColor: '#FFFFFF',
   sidebarBackground: '#343951',

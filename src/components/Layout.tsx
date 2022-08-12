@@ -10,7 +10,7 @@ const Layout = ({ children }: PropsWithChildren) => {
       <ThemeProvider theme={theme}>
         <LayoutDiv>
           <Sidebar />
-          <main>{children}</main>
+          {children}
           <UserStorageInformation />
         </LayoutDiv>
       </ThemeProvider>
