@@ -54,3 +54,18 @@ export const fileElementsArray = [
     lastModified: new Date('2020-08-10'),
   },
 ];
+
+export const shareElementsArray = [
+  {
+    name: 'Landing Page',
+    date: new Date('2020-02-05'),
+  },
+  {
+    name: 'Illustration Pack',
+    date: new Date('2020-04-05'),
+  },
+  {
+    name: 'CV Design',
+    date: new Date('2020-08-05'),
+  },
+];

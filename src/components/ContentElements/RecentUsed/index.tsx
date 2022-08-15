@@ -20,9 +20,11 @@ const RecentUsed = () => {
           </DivHeaderComplement>
         </DivTitleheader>
         <DivContentSection>
-          <RecentUsedContent recentContentProps={recentUsedElements[0]} />
-          <RecentUsedContent recentContentProps={recentUsedElements[1]} />
-          <RecentUsedContent recentContentProps={recentUsedElements[2]} />
+          {recentUsedElements.map((recentElement, key) => {
+            return (
+              <RecentUsedContent key={key} recentContentProps={recentElement} />
+            );
+          })}
         </DivContentSection>
       </DivRecentUsed>
     </>

@@ -1,7 +1,9 @@
+import moment from 'moment';
 import {
   DivColorSquare,
   DivFileName,
   DivRecentFilesElements,
+  DivTextRecent,
   TextNameFile,
   TextRecentFilesSection,
 } from './RecentFilesElementsStyled';
@@ -13,7 +15,6 @@ interface IFilesElements {
     lastModified: Date;
   };
 }
-
 const RecentFilesElements = ({ filesElementsProps }: IFilesElements) => {
   return (
     <>
@@ -22,12 +23,14 @@ const RecentFilesElements = ({ filesElementsProps }: IFilesElements) => {
           <DivColorSquare />
           <TextNameFile>{filesElementsProps.name}</TextNameFile>
         </DivFileName>
-        <TextRecentFilesSection>
-          {filesElementsProps.members}
-        </TextRecentFilesSection>
-        <TextRecentFilesSection>
-          {filesElementsProps.lastModified.getDate()}
-        </TextRecentFilesSection>
+        <DivTextRecent>
+          <TextRecentFilesSection>
+            {filesElementsProps.members} members
+          </TextRecentFilesSection>
+          <TextRecentFilesSection>
+            {moment(filesElementsProps.lastModified).format('ll')}
+          </TextRecentFilesSection>
+        </DivTextRecent>
       </DivRecentFilesElements>
     </>
   );

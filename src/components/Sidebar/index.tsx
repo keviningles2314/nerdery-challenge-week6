@@ -40,7 +40,7 @@ const Sidebar = () => {
             return (
               <SidebarLinkElement
                 key={key}
-                active={false}
+                active={true}
                 linkElement={sidebarElement}
               />
             );

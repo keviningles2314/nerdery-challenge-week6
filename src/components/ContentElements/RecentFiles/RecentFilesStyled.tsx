@@ -3,6 +3,7 @@ import { theme } from '../../../style/theme';
 export const DivRecentFiles = styled.div`
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 `;
 
 export const TitleComplementText = styled.p`
@@ -13,6 +14,7 @@ export const TitleComplementText = styled.p`
 export const DivRecentFilesContent = styled.div`
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 `;
 
 export const DivRecentFilesContentHeader = styled.div`
@@ -28,5 +30,6 @@ export const TitleContentHeader = styled.p`
 export const DivContentSectionRecentFiles = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 17px;
+  gap: 14px;
+  box-sizing: border-box;
 `;

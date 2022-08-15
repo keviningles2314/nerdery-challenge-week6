@@ -13,6 +13,7 @@ import {
   TitleContentHeader,
 } from './RecentFilesStyled';
 import { fileElementsArray } from '../../../utils/elements';
+import { DivTextRecent } from './RecentFilesElements/RecentFilesElementsStyled';
 const RecentFiles = () => {
   return (
     <>
@@ -25,13 +26,22 @@ const RecentFiles = () => {
         </DivTitleheader>
         <DivRecentFilesContent>
           <DivRecentFilesContentHeader>
-            <TitleContentHeader>Name</TitleContentHeader>
-            <TitleContentHeader>Members</TitleContentHeader>
-            <TitleContentHeader>Last Modified</TitleContentHeader>
+            <DivTextRecent>
+              <TitleContentHeader>Name</TitleContentHeader>
+            </DivTextRecent>
+            <DivTextRecent>
+              <TitleContentHeader>Members</TitleContentHeader>
+              <TitleContentHeader>Last Modified</TitleContentHeader>
+            </DivTextRecent>
           </DivRecentFilesContentHeader>
           <DivContentSectionRecentFiles>
             {fileElementsArray.map((fileElement, key) => {
-              return <RecentFilesElements filesElementsProps={fileElement} />;
+              return (
+                <RecentFilesElements
+                  key={key}
+                  filesElementsProps={fileElement}
+                />
+              );
             })}
           </DivContentSectionRecentFiles>
         </DivRecentFilesContent>

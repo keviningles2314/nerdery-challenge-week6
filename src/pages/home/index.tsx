@@ -2,6 +2,7 @@ import { DivHome, DivSearchBar, InputTextSearchBar } from './homeStyled';
 import { IoIosSquareOutline } from 'react-icons/io';
 import RecentUsed from '../../components/ContentElements/RecentUsed';
 import RecentFiles from '../../components/ContentElements/RecentFiles';
+import ShareComponent from '../../components/ContentElements/ShareComponent';
 const Home = () => {
   return (
     <>
@@ -20,6 +21,7 @@ const Home = () => {
         </DivSearchBar>
         <RecentUsed />
         <RecentFiles />
+        <ShareComponent />
       </DivHome>
     </>
   );

@@ -9,11 +9,11 @@ export const DivHome = styled.div`
   flex-direction: column;
   box-sizing: border-box;
   padding: 2%;
-  gap: 20px;
+  gap: 13px;
 `;
 
 export const InputTextSearchBar = styled.input`
-  font-size: 0.6em;
+  font-size: 0.7em;
   box-sizing: border-box;
   background-color: ${theme.white};
   width: 100%;
@@ -21,7 +21,9 @@ export const InputTextSearchBar = styled.input`
   color: ${theme.gray};
   border: none;
   border-radius: 5px;
-  padding-left: 6%;
+  padding-top: 2%;
+  padding-left: 7%;
+  padding-bottom: 2%;
   ::placeholder {
     color: #bcbeca;
   }

@@ -7,12 +7,14 @@ export const DivRecentFilesElements = styled.div`
   border-radius: 10px;
   padding: 0% 2.4%;
   justify-content: space-between;
+  box-sizing: border-box;
 `;
 
 export const DivFileName = styled.div`
   display: flex;
   gap: 8px;
   align-items: center;
+  flex: 1;
 `;
 
 export const DivColorSquare = styled.div`
@@ -20,6 +22,12 @@ export const DivColorSquare = styled.div`
   width: 21px;
   height: 21px;
   border-radius: 5px;
+`;
+export const DivTextRecent = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  box-sizing: border-box;
 `;
 
 export const TextNameFile = styled.p`
