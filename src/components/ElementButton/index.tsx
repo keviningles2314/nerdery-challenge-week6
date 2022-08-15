@@ -1,7 +1,7 @@
 import { ButtonElement, IconLabel } from './ElementButtonStyled';
 interface IButtonProps {
   label: string;
-  icon: string;
+  icon?: string;
 }
 const ElementButton = ({ label, icon }: IButtonProps) => {
   return (

@@ -12,4 +12,5 @@ export const theme = {
   pageActive: '#343951',
   pageInactive: '#9D9FAF',
   orange: '#FF9F00',
+  background: '#f5f6fc',
 };

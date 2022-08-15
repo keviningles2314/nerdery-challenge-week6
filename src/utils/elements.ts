@@ -69,3 +69,26 @@ export const shareElementsArray = [
     date: new Date('2020-08-05'),
   },
 ];
+
+export const storagesInfoArray = [
+  {
+    name: 'Documents',
+    files: 720,
+    space: 200,
+  },
+  {
+    name: 'Documents',
+    files: 720,
+    space: 125,
+  },
+  {
+    name: 'Documents',
+    files: 720,
+    space: 75,
+  },
+  {
+    name: 'Documents',
+    files: 720,
+    space: 50,
+  },
+];

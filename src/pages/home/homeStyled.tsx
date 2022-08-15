@@ -4,7 +4,7 @@ import { theme } from '../../style/theme';
 export const DivHome = styled.div`
   width: 55%;
   height: 100%;
-  background-color: #f5f6fc;
+  background-color: ${theme.background};
   display: flex;
   flex-direction: column;
   box-sizing: border-box;

@@ -10,5 +10,6 @@ export const LayoutDiv = styled.div`
   height: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 20px;
 `;
