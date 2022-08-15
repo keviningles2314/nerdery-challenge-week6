@@ -11,4 +11,5 @@ export const theme = {
   gray: '#BCBECA',
   pageActive: '#343951',
   pageInactive: '#9D9FAF',
+  orange: '#FF9F00',
 };

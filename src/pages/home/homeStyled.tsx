@@ -7,23 +7,27 @@ export const DivHome = styled.div`
   background-color: #f5f6fc;
   display: flex;
   flex-direction: column;
-  padding: 2% 3% 2% 2%;
+  box-sizing: border-box;
+  padding: 2%;
+  gap: 20px;
 `;
 
 export const InputTextSearchBar = styled.input`
-  font-size: 0.7em;
+  font-size: 0.6em;
+  box-sizing: border-box;
   background-color: ${theme.white};
   width: 100%;
+  height: 100%;
   color: ${theme.gray};
   border: none;
-  padding: 1%;
   border-radius: 5px;
+  padding-left: 6%;
+  ::placeholder {
+    color: #bcbeca;
+  }
 `;
 
-export const DivSearchBar = styled.div``;
-
-export const DivRecentUsed = styled.div``;
-
-export const DivRecentFiles = styled.div``;
-
-export const DivShare = styled.div``;
+export const DivSearchBar = styled.div`
+  box-sizing: border-box;
+  height: 3.5%;
+`;
